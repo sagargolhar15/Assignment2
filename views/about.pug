@@ -1,0 +1,15 @@
+include ./header.pug 
+section#about.container.about
+  .row.justify-content-center
+    .col-md-6
+      h1.text-center.font-weight-bold #{data.heading1}
+      p.text-center.text-dark.h6 #{data.heading1_desc}
+  .row.mt-5
+    .col-md-6
+      h2.text-center #{data.heading2}
+      hr(style='background-color:red; height: 2px;')
+      p #{data.heading2_desc}
+    .col-md-6
+      img(src='./images/'+data.img height='100%' width='100%' alt='')
+
+include ./footer.pug 

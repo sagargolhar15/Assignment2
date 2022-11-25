@@ -1,0 +1,21 @@
+include ./header.pug 
+section#services.container-fluid.overservices.bg-light.mt-2.mb-4
+  .row.justify-content-center
+    .col-md-6
+      h1.text-center.font-weight-bold.mt-4 SERVICES
+      p.text-center.text-dark.h6
+        | Etiam at varius tellus. Proin vitae dui dolor. Praesent blandit
+        | vitae arcu in congue. Nulla rhoncus nisl et dolor eleifend
+  .row.mt-5
+    for d in data
+        .col-md-4.d-block.mx-auto
+            .single-service(style='background: white;')
+                .part-icon 
+                    i(class=[d.icon])
+                .part-text
+                    h3 #{d.name}
+                    p(style='height: 120px; overflow:hidden;') #{d.desc}
+                    a(href='#') Read More
+    
+
+include ./footer.pug 

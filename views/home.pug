@@ -1,0 +1,14 @@
+include ./header.pug 
+.container-fluid.bgimage.text-center.text-white.headerset
+  .row.justify-content-center
+    .col-md-8
+      h2.text-weight-bold
+        | #{data.heading1}
+      p.font-weight-bold.h5.mt-4
+        | #{data.heading2}
+      button.btn.btn-danger.btn-lg.text-white.text-capitalize.mt-5
+        | #{data.link} 
+        span
+          i.bi.bi-arrow-right
+
+include ./footer.pug 

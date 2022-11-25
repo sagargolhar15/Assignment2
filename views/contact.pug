@@ -1,0 +1,19 @@
+include ./header.pug 
+section#contact.container-fluid.mt-5.bg-light
+  .row
+    h1.text-center.font-weight-bold.mt-5 CONTACT US
+    .col-md-6.mt-4.ps-4.pt-4.pb-5
+      iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13503.014303430862!2d73.72901678152654!3d18.580042559662033!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bbc1aaaaaaab%3A0x316090d140dfd0b3!2sNeoSOFT!5e0!3m2!1sen!2sin!4v1666204381722!5m2!1sen!2sin' width='100%' height='550' style='border:0;' allowfullscreen='' loading='lazy' referrerpolicy='no-referrer-when-downgrade')
+    .col-md-6.p-4
+      form(action='/save_contact' method='post')
+        label(for='fname') Full Name
+        input#fname(type='text' name='fullname' placeholder='Your full name..')
+        label(for='email') Email
+        input#lname.form-control(type='email' name='email' placeholder='Your Email..')
+        label(for='city') City
+        input#city(type='text' name='city' placeholder='Your city..')
+        label(for='subject') Subject
+        textarea#subject(name='subject' placeholder='Write something..' style='height:200px')
+        input.mx-auto.d-block(type='submit' value='Submit')
+
+include ./footer.pug 
