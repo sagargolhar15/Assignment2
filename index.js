@@ -104,7 +104,7 @@ app.post('/save_contact', (req, res) => {
     </script>`);
     }
 })
-
+// show contact details
 app.get('/show_contact', (req, res) => {
     try {
         // read contents of the file
